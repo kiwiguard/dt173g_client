@@ -4,4 +4,4 @@ This repo was created as a project in course DT173G - Webdevelopment III at Mid 
 It's a portfolio website developed in HTML, SASS, Java Script and automated with Gulp
 
 ## REST websevices
-The site is connected to a REST webservice developed also developed by me.
+The site is connected to a REST webservice also developed by me.
