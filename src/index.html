@@ -5,14 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gulp automated template</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
-<body>
-    <div class="container">
-        <h1>Hi there!</h1>
+<body id="body">
+    <div class="banner"> 
+        <section class="header">
+                <i id="open-menu" onclick="openNav()" class="fa fa-bars fa-2x open-menu"></i>
+                <i id="close-menu" onclick="closeNav()" class="fa fa-times fa-2x open-menu" style="display:none;"></i>
+            <nav class="nav-links" id="nav-links" aria-controls="menu" style="display: none;">
+                <a href="#">Projects</a>
+                <a href="#">My Story</a>
+                <a href="#">Resume</a>
+                <a href="mailto:frida.susanne@gmail.com">Contact</a>
+            </nav>
+        </section>
 
-        <p>Placeholder text - write me like one of your french girls</p>
-        
+        <section class="billboard container">
+            <div class="billboard__heading">
+                <h1 class="billboard-title">Susanne Nilsson</h1>
+                <h2 class="billboard-subtitle">Full-Stack Web Developer | Web Designer</h2>
+            </div>
+            
+        </section>
     </div>
+
+    <section class="projects grid-3">
+        <div class="project-card">
+            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <div class="project-info">
+                <h3>Project Name</h3>
+                <p>Art Direction, UI/UX Design, Code</p>
+                <a href="#">Go to Website</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <div class="project-info">
+                <h3>Project Name</h3>
+                <p>Art Direction, UI/UX Design, Code</p>
+                <a href="#">Go to Website</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <div class="project-info">
+                <h3>Project Name</h3>
+                <p>Art Direction, UI/UX Design, Code</p>
+                <a href="#">Go to Website</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <div class="project-info">
+                <h3>Project Name</h3>
+                <p>Art Direction, UI/UX Design, Code</p>
+                <a href="#">Go to Website</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <div class="project-info">
+                <h3>Project Name</h3>
+                <p>Art Direction, UI/UX Design, Code</p>
+                <a href="#">Go to Website</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <div class="project-info">
+                <h3>Project Name</h3>
+                <p>Art Direction, UI/UX Design, Code</p>
+                <a href="#">Go to Website</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-story">
+        <div class="my-story__text container">
+            <h2 class="section-subtitle">The person behind the code</h2>
+            <h1 class="section-title">My Story</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                <br>
+                <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+            </p>
+        </div>
+    </section>
+
+    <section class="resume grid-2 container">
+        <div class="resume__text">
+            <h2 class="section-subtitle">Things I've done</h2>
+            <h1 class="section-title">Work</h1>
+            <div class="resume__content grid-05">
+                <div class="resume-info">
+                    <h3>Title</h3>
+                    <h4>Employer</h4>
+                    <h5>Year - Year</h5>
+                </div>
+                <p class="resume-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </p>
+            </div>
+        </div>
+        <div class="resume__text">
+            <h2 class="section-subtitle">Things I've learned</h2>
+            <h1 class="section-title">Education</h1>
+            <div class="resume__content grid-05">
+                <div class="resume-info">
+                        <h3>Title</h3>
+                        <h4>University</h4>
+                        <h5>Year - Year</h5>
+                </div>
+                <p class="resume-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info container grid-2">
+            <p class="section-subtitle">© 2021 Susanne Nilsson</p>
+            <nav class="footer-nav">
+                <a href="mailto:frida.susanne@gmail.com"><i class="fa fa-envelope fa-1x"></i></a>
+                <a href="https://www.linkedin.com/in/susanne-nilsson-b7963aa5/"><i class="fab fa-linkedin-in fa-1x"></i></a>
+                <a href="https://github.com/kiwiguard"><i class="fab fa-github fa-1x"></i></a>
+            </nav>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

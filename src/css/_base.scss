@@ -2,9 +2,11 @@
 
 
 /* Variables */
-$font-stack: Helvetica, sans-serif;
-$primary-color: #fff5ee;
-$font-color: #637373;
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #121316;
+$font-color: #F2F1ED;
+$gold-color: #988345;
+$line-color: #707070;
 
 
 /* Typography */
@@ -12,4 +14,75 @@ body {
     background-color: $primary-color;
     font: 1.6rem $font-stack;
     color: $font-color;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-family: $font-stack;
+    font-weight: 400;
+    color: $font-color;
+    font-size: 4.3rem;
+    letter-spacing: 1.6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: $font-stack;
+    font-weight: 400;
+    color: $gold-color;
+    font-size: 2.1rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: $font-stack;
+    font-weight: 400;
+    color: $font-color;
+    font-size: 2.1rem;
+}
+h4 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+h5 {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+a,
+a:visited {
+    color: $gold-color;
+}
+
+.section-subtitle {
+    font-family: $font-stack;
+    font-size: 1.5rem;
+    color: $gold-color;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-family: $font-stack;
+    font-size: 3.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0rem;
+    margin-bottom: 5rem;
+}
+
+.resume-info {
+    h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+    }
+}
+
+.resume-description {
+    font-size: 1rem;
 }

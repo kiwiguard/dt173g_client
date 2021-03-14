@@ -1,1 +1,63 @@
 /* Styles related to layout */
+.banner {
+    height: 100vh;
+    border-bottom: 10px solid $gold-color;
+}
+
+.header {
+    position: absolute;
+}
+
+.projects {
+    height: fit-content;
+}
+
+.header {
+    top: 0;
+    height: 10vh;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.billboard__heading {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.my-story,
+.resume {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.resume {
+    grid-gap: 56px;
+}
+
+.my-story__text {
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-05 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+footer {
+    padding: 4rem 0;
+}

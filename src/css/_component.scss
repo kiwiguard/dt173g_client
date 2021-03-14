@@ -1,2 +1,169 @@
 /* Styles for components - buttons, navbars, cards, reusables */
 
+.open-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: $gold-color;
+    padding: 1rem 1rem 2rem 2rem;
+    cursor: pointer;
+    background: rgba($primary-color, .9);
+}
+
+.close-menu {
+    position: fixed;
+    top: 0;
+    color: $gold-color;
+    padding: 1rem;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 25vh 0;
+    justify-content: space-around;
+    background: rgba($primary-color, .9);
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: $font-color;
+        font-size: 4.3rem;
+        font-family: $font-stack;
+        z-index: 10;
+        margin-bottom: 4rem;
+
+        &:hover {
+            color: $gold-color;
+        }
+    }
+}
+
+.stop-scrolling {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+.project-card {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        background-color: none; 
+
+        .project-image {
+            filter: grayscale(0%);
+            transition: 0.2s ease-out;
+        }
+
+        .project-info {
+            height: fit-content;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 2rem;
+
+            h3 {
+                margin-bottom: 1.5rem;
+                margin-top: 0.5rem;
+            }
+
+            p {
+                margin-bottom: 1.5rem;
+            }
+            
+            a {
+                font-size: 1rem;
+                float: right;
+            }
+
+            p,
+            a {
+                display: block;
+                opacity: 1;
+            }
+
+        }
+    }
+
+    .project-image {
+        position: relative;
+        filter: grayscale(100%);  
+    }
+
+    .project-info {
+        position: absolute;
+        background-color: rgba($primary-color, .7); 
+        width: 100%;
+        bottom: 0;
+        height: 15%;
+        z-index: 4;
+        transition: 0.2s ease-out; 
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        h3 {
+            margin-bottom: 0px;
+            margin-top: 0.5rem;
+            
+            &:after {
+                content:'';
+                border-bottom: 3px solid $line-color;
+                position: absolute;
+                left: 2rem;
+                right: 2rem;
+                top: 3.5rem;
+            }
+        }
+
+        p,
+        a {
+            display: none;
+            margin-top: -2;
+            opacity: 0;
+        }
+    }
+ 
+}
+
+.my-story {
+    background-color: $font-color !important;
+
+    .section-title {
+        color: $primary-color !important;
+    }
+
+    p {
+        color: $primary-color;
+        text-align: center;
+    }
+}
+
+.resume {
+    .section-subtitle,
+    .section-title {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: $font-color;
+    color: $gold-color;
+
+    nav {
+        a {
+            float: right;
+            margin-left: 2rem;
+            color: $gold-color;
+
+            &:visited {
+                color: $gold-color;
+            }
+        }
+    }
+}
