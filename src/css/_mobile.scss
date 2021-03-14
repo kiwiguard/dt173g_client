@@ -1,0 +1,134 @@
+@media (max-width: 820px) {
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .billboard {
+        margin-top: 60%;
+    }
+
+    .billboard-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .billboard-subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        a {
+            font-size: 2rem;
+        }
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .resume {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .resume-description,
+    .resume__content,
+    .resume__text,
+    .resume-info,
+    .footer-info{
+        width: 95vw;
+    }
+
+    .resume__text {
+        margin-bottom: 10%;
+    }
+
+    .resume__content,
+    .footer-info {
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+
+    .footer-info {
+        .section-subtitle,
+        .footer-nav {
+            justify-self: center;
+        }
+    }
+}
+
+@media (min-width: 821px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .billboard {
+        margin-top: 60%;
+    }
+
+    .billboard-title {
+        font-size: 3rem;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .resume-description,
+    .resume__content,
+    .resume__text,
+    .resume-info,
+    .footer-info{
+        width: 95vw;
+    }
+
+    .resume__text {
+        margin-bottom: 10%;
+    }
+
+    .resume__content,
+    .footer-info {
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+
+    .footer-info {
+        .section-subtitle,
+        .footer-nav {
+            justify-self: center;
+        }
+    }
+}

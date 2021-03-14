@@ -7,8 +7,8 @@ function openNav() {
     var body = document.getElementById('body');
     openMenu.style.padding = '1rem 1rem 200vw 200vw';
     links.style.display = 'flex';
+    openMenu.style.display = 'none';
     closeMenu.style.display = 'inline';
-    body.classList.add('stop-scrolling');
 }
 
 function closeNav() {
@@ -20,5 +20,4 @@ function closeNav() {
     openMenu.style.display = 'inline';
     links.style.display = 'none';
     closeMenu.style.display = 'none';
-    body.classList.remove('stop-scrolling');
 }

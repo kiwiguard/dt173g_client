@@ -15,9 +15,9 @@
                 <i id="open-menu" onclick="openNav()" class="fa fa-bars fa-2x open-menu"></i>
                 <i id="close-menu" onclick="closeNav()" class="fa fa-times fa-2x open-menu" style="display:none;"></i>
             <nav class="nav-links" id="nav-links" aria-controls="menu" style="display: none;">
-                <a href="#">Projects</a>
-                <a href="#">My Story</a>
-                <a href="#">Resume</a>
+                <a href="#projects-section" onclick="closeNav()">Projects</a>
+                <a href="#my-story-section" onclick="closeNav()">My Story</a>
+                <a href="#resume-section" onclick="closeNav()">Resume</a>
                 <a href="mailto:frida.susanne@gmail.com">Contact</a>
             </nav>
         </section>
@@ -31,9 +31,9 @@
         </section>
     </div>
 
-    <section class="projects grid-3">
+    <section class="projects grid-3" id="projects-section">
         <div class="project-card">
-            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <img src="https://picsum.photos/630/630" alt="demo image" class="project-image">
             <div class="project-info">
                 <h3>Project Name</h3>
                 <p>Art Direction, UI/UX Design, Code</p>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <img src="https://picsum.photos/630/630" alt="demo image" class="project-image">
             <div class="project-info">
                 <h3>Project Name</h3>
                 <p>Art Direction, UI/UX Design, Code</p>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <img src="https://picsum.photos/630/630" alt="demo image" class="project-image">
             <div class="project-info">
                 <h3>Project Name</h3>
                 <p>Art Direction, UI/UX Design, Code</p>
@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <img src="https://picsum.photos/630/630" alt="demo image" class="project-image">
             <div class="project-info">
                 <h3>Project Name</h3>
                 <p>Art Direction, UI/UX Design, Code</p>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <img src="https://picsum.photos/630/630" alt="demo image" class="project-image">
             <div class="project-info">
                 <h3>Project Name</h3>
                 <p>Art Direction, UI/UX Design, Code</p>
@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="https://picsum.photos/640/640" alt="demo image" class="project-image">
+            <img src="https://picsum.photos/630/630" alt="demo image" class="project-image">
             <div class="project-info">
                 <h3>Project Name</h3>
                 <p>Art Direction, UI/UX Design, Code</p>
@@ -82,7 +82,7 @@
         </div>
     </section>
 
-    <section class="my-story">
+    <section class="my-story" id="my-story-section">
         <div class="my-story__text container">
             <h2 class="section-subtitle">The person behind the code</h2>
             <h1 class="section-title">My Story</h1>
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <section class="resume grid-2 container">
+    <section class="resume grid-2 container" id="resume-section">
         <div class="resume__text">
             <h2 class="section-subtitle">Things I've done</h2>
             <h1 class="section-title">Work</h1>

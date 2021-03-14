@@ -7,7 +7,7 @@
     color: $gold-color;
     padding: 1rem 1rem 2rem 2rem;
     cursor: pointer;
-    background: rgba($primary-color, .9);
+    z-index: 10;
 }
 
 .close-menu {
@@ -27,7 +27,7 @@
     height: 100vh;
     padding: 25vh 0;
     justify-content: space-around;
-    background: rgba($primary-color, .9);
+    background: rgba($primary-color, .99);
 
     a {
         text-align: center;
@@ -37,18 +37,13 @@
         font-family: $font-stack;
         z-index: 10;
         margin-bottom: 4rem;
+        cursor: pointer;
 
         &:hover {
             color: $gold-color;
         }
     }
 }
-
-.stop-scrolling {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-  }
 
 .project-card {
     cursor: pointer;
@@ -93,6 +88,7 @@
 
     .project-image {
         position: relative;
+        width: fit-content;
         filter: grayscale(100%);  
     }
 
@@ -101,7 +97,7 @@
         background-color: rgba($primary-color, .7); 
         width: 100%;
         bottom: 0;
-        height: 15%;
+        height: 20%;
         z-index: 4;
         transition: 0.2s ease-out; 
         padding-left: 2rem;
