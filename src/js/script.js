@@ -31,7 +31,7 @@ function getProject() {
                 <div class="project-info">
                     <h3>${proj.pTitle}</h3>
                     <p>${proj.pDescription}</p>
-                    <a href="${proj.url}">Go to Website</a>
+                    <a href="${proj.pUrl}">Go to Website</a>
                 </div>
             </div>
             `
