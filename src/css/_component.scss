@@ -59,6 +59,7 @@
 
         .project-info {
             height: fit-content;
+            background-color: rgba($primary-color, .7); 
             padding-left: 2rem;
             padding-right: 2rem;
             padding-bottom: 2rem;
@@ -97,7 +98,7 @@
         background-color: rgba($primary-color, .7); 
         width: 100%;
         bottom: 0;
-        height: 20%;
+        height: 15%;
         z-index: 4;
         transition: 0.2s ease-out; 
         padding-left: 2rem;
