@@ -1,14 +1,14 @@
 // General scripts for entire webpage
 
 //development
-const projectFetchURL = 'http://localhost/DT173G_Projekt/rest/api/project.php';
-const workFetchURL = 'http://localhost/DT173G_Projekt/rest/api/work.php';
-const eduFetchURL = 'http://localhost/DT173G_Projekt/rest/api/education.php';
+// const projectFetchURL = 'http://localhost/DT173G_Projekt/rest/api/project.php';
+// const workFetchURL = 'http://localhost/DT173G_Projekt/rest/api/work.php';
+// const eduFetchURL = 'http://localhost/DT173G_Projekt/rest/api/education.php';
 
 //deployment
-// const projectFetchURL = 'https://susanne-nilsson.se/src/api/project.php'
-// const workFetchURL = 'https://susanne-nilsson.se/src/api/work.php'
-// const eduFetchURL = 'https://susanne-nilsson.se/src/api/education.php'
+const projectFetchURL = 'https://susanne-nilsson.se/src/api/project.php'
+const workFetchURL = 'https://susanne-nilsson.se/src/api/work.php'
+const eduFetchURL = 'https://susanne-nilsson.se/src/api/education.php'
 
 // Variables
 const projectDiv = document.getElementById("projects-section");
@@ -77,7 +77,7 @@ function getEducation() {
                     <h4>${edu.university}</h4>
                     <h5>${edu.start_date} - ${edu.end_date}</h5>
                 </div>
-                <p>${edu.eDescription}</p>
+                <p class="resume-description">${edu.eDescription}</p>
             </div>
             `
         });
