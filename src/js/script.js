@@ -1,11 +1,14 @@
 // General scripts for entire webpage
 
 //development
-const projectFetchURL = 'http://localhost/DT173G_Projekt/REST/api/project.php';
-const workFetchURL = 'http://localhost/DT173G_Projekt/REST/api/work.php';
-const eduFetchURL = 'http://localhost/DT173G_Projekt/REST/api/education.php';
+const projectFetchURL = 'http://localhost/DT173G_Projekt/rest/api/project.php';
+const workFetchURL = 'http://localhost/DT173G_Projekt/rest/api/work.php';
+const eduFetchURL = 'http://localhost/DT173G_Projekt/rest/api/education.php';
 
 //deployment
+// const projectFetchURL = 'https://susanne-nilsson.se/src/api/project.php'
+// const workFetchURL = 'https://susanne-nilsson.se/src/api/work.php'
+// const eduFetchURL = 'https://susanne-nilsson.se/src/api/education.php'
 
 // Variables
 const projectDiv = document.getElementById("projects-section");
@@ -77,6 +80,6 @@ function getEducation() {
                 <p>${edu.eDescription}</p>
             </div>
             `
-        })
+        });
     })
 }
